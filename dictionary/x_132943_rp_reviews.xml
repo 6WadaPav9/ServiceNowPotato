@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Reviews" max_length="40" name="x_132943_rp_reviews" type="collection">
+        <element label="Comments" max_length="500" name="comments" type="string"/>
+        <element label="Game" max_length="32" name="game" reference="x_132943_rp_video_games" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Reviewer" max_length="32" name="reviewer" reference="sys_user" type="reference"/>
+        <element label="Review Date" max_length="40" name="review_date" type="glide_date"/>
+        <element choice="1" label="Stars" max_length="40" name="stars" type="choice">
+            <choice>
+                <element label="1" sequence="100" value="1"/>
+                <element label="2" sequence="200" value="2"/>
+                <element label="3" sequence="300" value="3"/>
+                <element label="4" sequence="400" value="4"/>
+                <element label="5" sequence="500" value="5"/>
+            </choice>
+        </element>
+        <element choice="3" default="not_yet_requested" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element label="Not Yet Requested" sequence="100" value="not_yet_requested"/>
+                <element label="Requested" sequence="200" value="requested"/>
+                <element label="Approved" sequence="300" value="approved"/>
+                <element label="Rejected" sequence="400" value="rejected"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="game"/>
+        </index>
+        <index name="index2">
+            <element name="reviewer"/>
+        </index>
+    </element>
+</database>

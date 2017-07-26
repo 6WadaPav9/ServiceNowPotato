@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Video Games" max_length="40" name="x_132943_rp_video_games" type="collection">
+        <element label="Developer" max_length="40" name="developer" type="string"/>
+        <element choice="1" label="ESRB rating" max_length="40" name="esrb_rating" type="choice">
+            <choice>
+                <element label="N/A" sequence="100" value="n_a"/>
+                <element label="KA" sequence="200" value="ka"/>
+                <element label="E" sequence="300" value="e"/>
+                <element label="E" sequence="300" value="e"/>
+                <element label="T" sequence="400" value="t"/>
+                <element label="M" sequence="500" value="m"/>
+                <element label="RP" sequence="600" value="rp"/>
+            </choice>
+        </element>
+        <element choice="1" label="Genre" max_length="40" name="genre" type="choice">
+            <choice>
+                <element label="FPS" sequence="300" value="fps"/>
+                <element label="Maze" sequence="400" value="maze"/>
+                <element label="Party" sequence="500" value="party"/>
+                <element label="Racing" sequence="600" value="racing"/>
+                <element label="Role-Playing" sequence="700" value="role_playing"/>
+                <element label="Sports" sequence="800" value="sports"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Released" max_length="40" name="released" type="boolean"/>
+        <element label="Release Date" max_length="40" name="release_date" type="glide_date"/>
+        <element display="true" label="title" max_length="100" name="title" type="string"/>
+    </element>
+</database>

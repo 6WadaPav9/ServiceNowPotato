@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_132943_rp_video_games</basic_apply_to>
+        <basic_query_from>x_132943_rp_reviews</basic_query_from>
+        <insert_callback/>
+        <name>Video Game Reviews</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+    current.addQuery('game', parent.sys_id);
+	current.addQuery('status', 'approved');
+})(current, parent);]]></query_with>
+        <reference_field>game</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-07-06 15:21:25</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>cf2461694f33320011c34aa28110c773</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Video Game Reviews</sys_name>
+        <sys_package display_value="Rotten Potatoes" source="x_132943_rp">d366e8954f33320011c34aa28110c7f9</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Rotten Potatoes">d366e8954f33320011c34aa28110c7f9</sys_scope>
+        <sys_update_name>sys_relationship_cf2461694f33320011c34aa28110c773</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-07-06 15:21:25</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=cf2461694f33320011c34aa28110c773"/>
+</record_update>

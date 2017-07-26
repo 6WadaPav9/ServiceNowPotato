@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Video Game Import" max_length="40" name="x_132943_rp_video_game_import" type="collection">
+        <element attributes="import_attribute_name=developer,edge_encryption_enabled=true" label="developer" max_length="40" name="u_developer" type="string"/>
+        <element attributes="import_attribute_name=ersb_rating,edge_encryption_enabled=true" label="ersb_rating" max_length="40" name="u_ersb_rating" type="string"/>
+        <element attributes="import_attribute_name=genre,edge_encryption_enabled=true" label="genre" max_length="40" name="u_genre" type="string"/>
+        <element attributes="import_attribute_name=number,edge_encryption_enabled=true" label="number" max_length="40" name="u_number" type="string"/>
+        <element attributes="import_attribute_name=released,edge_encryption_enabled=true" label="released" max_length="40" name="u_released" type="string"/>
+        <element attributes="import_attribute_name=release_date,edge_encryption_enabled=true" label="release_date" max_length="40" name="u_release_date" type="string"/>
+        <element attributes="import_attribute_name=title,edge_encryption_enabled=true" label="title" max_length="40" name="u_title" type="string"/>
+    </element>
+</database>
